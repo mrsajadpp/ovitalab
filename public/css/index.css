@@ -79,7 +79,6 @@
             "aside5 aside5 aside5";
     }
 } */
-
 h3 {
     font-family: "Ahrefs";
     color: #2F3039;
@@ -91,30 +90,70 @@ p {
     color: #7A7A7C;
 }
 
-.container {
+.hero {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 4vw;
-    margin-top: 60px;
-    max-width: 1220px;
+    text-align: center;
+    align-items: center;
+    height: auto;
+}
+
+.hero-content{
+    max-width: 50%;
+    padding-bottom: 3rem;
+}
+
+.hero-content h1{
+    font-size: 2rem;
+    padding-top: 5rem;
+}
+
+.hero-content p{
+    font-size: 1rem;
+    padding-bottom: 2rem;
+}
+
+.cta-button{
+    background-color: #000000;
+    color: white;
+    padding: 0.5rem 1rem;
+    border-width: 1px;
+    border-radius: 20px;
+    font-size: 1 rem;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.cta-button:hover{
+    transform: scale(1.1);
+    background-color: rgb(255, 255, 255);
+    color: black;
 }
 
 .bento-box {
     display: flex;
     flex-direction: column;
+    align-items: center;
     grid-template-areas: "one three three four"
         "one three three four"
         "one three three five"
         "two three three five";
     gap: 2vmax;
+    width: 80%;
 }
 
 .bento-child {
-    padding: 2vmax;
+    padding-bottom: 2vmax;
+    padding-left: 1vmax;
+    padding-right: 1vmax;
     background-color: #F7F8FB;
     border: 1px solid #E1E3E9;
     border-radius: 8px;
+}
+
+.bento-child h3{
+    padding-top: 1rem;
 }
 
 .bento-child.one {
